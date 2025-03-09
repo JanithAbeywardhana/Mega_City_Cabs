@@ -20,7 +20,7 @@
             margin-bottom: 20px;
         }
         .driver-card .card-header {
-            background-color: #007bff;
+            background-color: black;
             color: #fff;
             font-weight: bold;
         }
@@ -32,12 +32,45 @@
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #0d6efd;
+          
             margin-bottom: 10px;
         }
         .action-buttons .btn {
             margin-right: 5px;
         }
+        
+        
+        .footer {
+    background-color: black;  
+    color: #333;              
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #ddd;
+    width: 100%; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: white; 
+   
+}
+
+.footer a:hover {
+    color: gray;
+}
     </style>
 </head>
 <body>
@@ -81,6 +114,15 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+       <footer class="footer">
+    <div class="footer-container">
+        <p>© Copyright 2025 <a href="#">MegaCityCabs.lk</a>. All Rights Reserved</p>
+        <p>Developed by <a href="#">Janith Abeywardhana</a></p>
+    </div>
+</footer>
+     
 
 
 </body>

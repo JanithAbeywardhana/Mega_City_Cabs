@@ -8,6 +8,11 @@
 <title>Insert title here</title>
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+       <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
       body {
           background-color: #f8f9fa;
@@ -98,34 +103,89 @@
     background-color: #222; 
 }
       
-      
-        .mission-section {
-            text-align: left;
-            padding: 50px 20px;
-            max-width: 88%;
-            margin: auto;
-        }
+    
         
-        .mission-section h1{
-            font-size: 30px;
-        }
         
-        .mission-section p{
-            font-size: 13px;
-             text-align: justify;
-        }
-        
-        .mission-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-in-out;
-        }
-        .toggle-btn {
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-        }
+            .faq-container {
+      max-width: 1300px;
+      margin: 50px 20px 50px 50px;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    .faq-container h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    
+    .faq-item {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 15px 0;
+      cursor: pointer; 
+      transition: background 0.3s ease;
+    }
+    .faq-item:hover {
+      background: #fafafa;
+    }
+    
+   
+.faq-question:hover,
+.faq-question:focus {
+  background-color: transparent !important;
+  outline: none;
+}
+
+
+.faq-question span {
+  color: inherit; 
+  
+}
+
+ .faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 5px 0;
+  color: black;
+  
+}
+
+.arrow {
+  font-size: 1.2rem;
+ 
+  margin-left: auto; 
+  transition: transform 0.3s;
+}
+
+    
+    .faq-item.active .arrow {
+      transform: rotate(180deg);
+    }
+
+    
+    .faq-answer {
+      overflow: hidden;
+      max-height: 0; 
+      transition: max-height 0.3s ease; 
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    
+    .faq-answer p {
+      margin-top: 10px;
+    }
+       
         
         
         
@@ -173,6 +233,77 @@
     width: 120px; 
     height: auto;
 }
+
+
+
+/* Section Title */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: -40px;
+  color: #000;
+    padding: 50px 0;
+}
+
+.custom-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures even spacing */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Adjust width as needed */
+}
+
+.custom-card + .custom-card {
+    margin-left: 40px; /* Adjust this value to control the gap */
+}
+
+.custom-card img {
+    width: 80px; /* Adjust QR code size */
+    height: auto;
+    margin-right: 15px;
+}
+
+.card-content {
+    flex-grow: 1; /* Allows text to take space */
+}
+
+.arrow-icon {
+    font-size: 20px;
+    color: black;
+}
+
+/* QR Code Image */
+.qr-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Title in Card */
+.app-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #000;
+}
+
+/* Subtitle in Card */
+.app-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Arrow Icon */
+.arrow-icon {
+  font-size: 1.2rem;
+  margin-left: 15px; /* Space between text and arrow */
+  color: #000;
+}
+
         
         
         .footer {
@@ -216,33 +347,54 @@
     </section>
     
     
-         <section class="mission-section">
-        <h1 >We reimagine the way the world moves for the better</h1>
-        <p>Movement is what we power. It's our lifeblood. It runs through our veins. It’s what gets us out of bed each morning. It pushes us to constantly reimagine how we can move better. For you. For all the places you want to go. For all the things you want to get. For all the ways you want to earn. Across the entire world. In real time. At the incredible speed of now.</p>
-        
-        <button class="toggle-btn" onclick="toggleMission()">&#9650;</button>
-        
-        <div class="mission-content" id="mission-content">
-            <h4>Read our full mission statement</h4>
-            <p>At Mega City Cabs Service, our mission is to provide safe, reliable, and efficient transportation solutions across Colombo. We are committed to delivering exceptional customer experiences through professional drivers, well-maintained vehicles, and cutting-edge technology. 
-            Our goal is to ensure convenient, affordable, and timely rides for every passenger while upholding the highest standards of safety and service excellence. Whether for daily commutes or special journeys, Mega City Cabs is your trusted travel partner.</p>
-            
-        </div>
-    </section>
+  
     
-    <script>
-        function toggleMission() {
-            var content = document.getElementById("mission-content");
-            var btn = document.querySelector(".toggle-btn");
-            if (content.style.maxHeight === "0px" || content.style.maxHeight === "") {
-                content.style.maxHeight = content.scrollHeight + "px";
-                btn.innerHTML = "&#9660;"; // Down arrow
-            } else {
-                content.style.maxHeight = "0px";
-                btn.innerHTML = "&#9650;"; // Up arrow
-            }
+    
+    
+     <div class="faq-container">
+  <h2>We reimagine the way the world moves for the better</h2>
+  <p>Movement is what we power. It's our lifeblood. It runs through our veins. It’s what gets us out of bed each morning. It pushes us to constantly reimagine how we can move better. For you. For all the places you want to go. For all the things you want to get. For all the ways you want to earn. Across the entire world. In real time. At the incredible speed of now.</p>
+
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>Read our full mission statement</span>
+      <i class="bi bi-chevron-down arrow"></i>
+    </button>
+    <div class="faq-answer">
+      <p>
+      At Mega City Cabs Service, our mission is to provide safe, reliable, and efficient transportation solutions across Colombo. We are committed to delivering exceptional customer experiences through professional drivers, well-maintained vehicles, and cutting-edge technology. 
+      Our goal is to ensure convenient, affordable, and timely rides for every passenger while upholding the highest standards of safety and service excellence. Whether for daily commutes or special journeys, Mega City Cabs is your trusted travel partner.
+      </p>
+      
+    </div>
+  </div>
+  </div>
+  
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const questionBtn = item.querySelector('.faq-question');
+      const answerPanel = item.querySelector('.faq-answer');
+      
+      questionBtn.addEventListener('click', () => {
+        // If not active, open it
+        if (!item.classList.contains('active')) {
+          item.classList.add('active');
+          // measure the scrollHeight and set it
+          answerPanel.style.maxHeight = answerPanel.scrollHeight + 'px';
+        } else {
+          // Otherwise, close it
+          item.classList.remove('active');
+          answerPanel.style.maxHeight = 0;
         }
-    </script>
+      });
+    });
+  });
+</script>
 
 
 
@@ -295,10 +447,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     
     
+    <section class="apps-section">
+  <div class="container">
+    
+    <div class="row mt-4 g-4">
+      
+<div class="d-flex justify-content-center">
+    <div class="custom-card">
+        <img src="../img/QR.jpg" alt="QR Code 1">
+        <div class="card-content">
+            <h5>Download Mega City App</h5>
+            <p>Scan to download</p>
+        </div>
+        <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon -->
+    </div>
+
+    <div class="custom-card">
+        <img src="../img/TW.jpg" alt="QR Code 2">
+        <div class="card-content">
+            <h5>About Us</h5>
+            <p>Commit Your Thoughts</p>
+        </div>
+        <a href = "feedbackForm.jsp"><i class="fas fa-arrow-right arrow-icon"></i> </a><!-- Arrow icon -->
+    </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS (Optional) -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+  crossorigin="anonymous">
+</script>
+    
+    
+    
 
     
     
-         <footer class="footer">
+  <footer class="footer">
     <div class="footer-container">
         <p>© Copyright 2025 <a href="#">MegaCityCabs.lk</a>. All Rights Reserved</p>
         <p>Developed by <a href="#">Janith Abeywardhana</a></p>

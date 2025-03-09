@@ -59,21 +59,21 @@ input[type="password"] {
     padding: 8px;
     font-size: 0.9rem;
     margin-bottom: -15px; 
-    border: 1px solid #ced4da;
+    border: 1px solid black;
     border-radius: 5px;
     transition: border-color 0.3s;
     
 }
 
 input:focus {
-    border-color: #007bff;
+    border-color: gray;
     outline: none;
-    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.3);
+    
 }
 
 input[type="submit"] {
     width: 80%;
-    background-color: #007bff;
+    background-color: black;
     color: white;
     font-size: 1rem;
     font-weight: 500;
@@ -86,7 +86,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: gray;
 }
 
 .login-link {
@@ -95,7 +95,7 @@ input[type="submit"]:hover {
 }
 
 .login-link a {
-    color: #007bff;
+    color: black;
     text-decoration: none;
     font-weight: 500;
 }

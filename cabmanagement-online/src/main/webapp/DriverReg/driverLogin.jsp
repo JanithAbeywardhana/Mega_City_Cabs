@@ -58,7 +58,7 @@ body {
 
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: black;
     border: none;
     padding: 10px;
     font-size: 16px;
@@ -68,7 +68,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: gray;
 }
 
 

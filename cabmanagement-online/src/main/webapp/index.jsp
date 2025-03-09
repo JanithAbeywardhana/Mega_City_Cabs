@@ -128,6 +128,79 @@ button:hover {
 
 
 
+.Mega-section {
+    padding: 80px 0;
+   margin-left: 40px;
+  
+}
+
+.black-box {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.black-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.signup-link {
+    color: #ccc;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.black-box hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: white;
+    border: none;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.category {
+    font-size: 14px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.date {
+    font-size: 14px;
+    color: gray;
+}
+
+
+
 
 .features {
     max-width: 1200px;
@@ -271,7 +344,7 @@ button:hover {
 
 .f i {
     font-size: 40px;
-    color: gray;
+    color: black;
     margin-bottom: 15px;
 }
 
@@ -535,7 +608,7 @@ button:hover {
         }
 
         .content-container h1 span {
-            color: #007bff;
+            color: gray;
         }
 
         .content-container p {
@@ -546,7 +619,7 @@ button:hover {
 
         .content-container a {
             text-decoration: none;
-            color: #007bff;
+            color: black;
         }
 
   
@@ -670,9 +743,8 @@ button:hover {
     height: auto;
 }
 
-.text-muted{
-text-decoration: none;
- text-align: left;
+.text-offwhite {
+  color: gray !important;
 }
 
 
@@ -759,6 +831,82 @@ text-decoration: none;
     .faq-answer p {
       margin-top: 10px;
     }
+    
+    
+    
+    /* Section Container */
+.apps-section {
+  background-color: #f9f9f9; /* Light gray background, if desired */
+  padding: 40px 0;
+  width: 100%;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: -40px;
+  color: #000;
+}
+
+.custom-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures even spacing */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Adjust width as needed */
+}
+
+.custom-card + .custom-card {
+    margin-left: 40px; /* Adjust this value to control the gap */
+}
+
+.custom-card img {
+    width: 80px; /* Adjust QR code size */
+    height: auto;
+    margin-right: 15px;
+}
+
+.card-content {
+    flex-grow: 1; /* Allows text to take space */
+}
+
+.arrow-icon {
+    font-size: 20px;
+    color: black;
+}
+
+/* QR Code Image */
+.qr-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Title in Card */
+.app-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #000;
+}
+
+/* Subtitle in Card */
+.app-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Arrow Icon */
+.arrow-icon {
+  font-size: 1.2rem;
+  margin-left: 15px; /* Space between text and arrow */
+  color: #000;
+}
 
 
 .footer {
@@ -843,9 +991,7 @@ text-decoration: none;
   
   
   
-  
-  
-        <section class="why-choose-us">
+   <section class="why-choose-us">
         <h2>Why Choose Us</h2>
         <p class="subtitle">We specialize in execute travel to and from all airports, seaports, Business meetings & long distances</p>
 
@@ -872,6 +1018,55 @@ text-decoration: none;
             </div>
         </div>
     </section> 
+  
+  
+  
+  
+  <section class="Mega-section">
+    <div class="container">
+        <div class="row">
+            <!-- Left Black Box -->
+            <div class="col-md-4 black-box">
+                <h2>Get a ride when you need one</h2>
+                <a href="#" class="signup-link">Sign up to ride</a>
+                <hr>
+                <h2>Start earning in your city</h2>
+                <a href="#" class="signup-link">Sign up to drive</a>
+            </div>
+
+            <!-- Right Two Cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/AIRide.jpg" alt="Train Image">
+                    <div class="card-content">
+                        <span class="category">Engineering, Backend, Data / ML, AI</span>
+                        <h3>How Mega City Cabs Leverages AI to Optimize Ride Operations</h3>
+                        <span class="date">January 9 / Global</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Ridee.jpg" alt="Stadium Image">
+                    <div class="card-content">
+                        <span class="category">Transit</span>
+                        <h3>How Mega City Cabs Supports University Transport with Reliable Rides</h3>
+                        <span class="date">January 6 / Global</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+  
+  
+  
+  
+       
     
     
     
@@ -899,11 +1094,13 @@ text-decoration: none;
                
                 <div class="col-md-6">
                     <h1 class="fw-bold">Drive when you want, make what you need</h1>
-                    <p class="text-muted">Earn on your own schedule.</p>
+                    <p class="text-offwhite">Earn on your own schedule.</p>
                     <div class="d-flex align-items-center mt-3">
                         <a href ="DriverReg/DRegister.jsp"><button class="btn btn-light fw-bold px-4 py-2 me-3">Get started</button></a>
                         
-                        <a href="DriverReg/driverLogin.jsp" class="text-muted">Already have an account? <span class="text-white fw-bold">Sign in</span></a>
+                        <a href="DriverReg/driverLogin.jsp" class="text-offwhite  text-decoration-none ms-3">
+                         Already have an account? <span class="text-white fw-bold">Sign in</span>
+                        </a>
                     </div>
                 </div>
 
@@ -930,28 +1127,30 @@ text-decoration: none;
 
   <div class="faq-item">
     <button class="faq-question">
-      <span>Can I drive with Uber in my city?</span>
+      <span>1. Why must I register to book a ride?</span>
       <i class="bi bi-chevron-down arrow"></i>
     </button>
     <div class="faq-answer">
       <p>
-        Uber is available in hundreds of cities worldwide. Tap below to see if yours is one of them.
+        To ensure your safety and provide a personalized experience, all customers must register with Mega City Cabs. 
+        Registration helps us verify your identity, offer real-time ride updates, and securely store your booking history.
       </p>
-      <p>
-        <a href="#" style="color: #007bff; text-decoration: none;">See all cities</a>
-      </p>
+      
     </div>
   </div>
   
  
   <div class="faq-item">
     <button class="faq-question">
-      <span>User Guidelines for ride with Mega City Cabs?</span>
+      <span>2. Which areas does Mega City Cabs serve?</span>
       <i class="bi bi-chevron-down arrow"></i>
     </button>
     <div class="faq-answer">
       <p>
-        You'll need a valid driver's license, a qualifying vehicle, and you must meet all city-specific requirements.
+        We currently operate exclusively within the Western Province to ensure prompt and reliable service. 
+        Rides outside this area are not available at this time.
+
+
       </p>
     </div>
   </div>
@@ -959,13 +1158,13 @@ text-decoration: none;
 
   <div class="faq-item">
     <button class="faq-question">
-      <span>Is the Uber platform safe?</span>
+      <span>3. How do I confirm my booking and pay for my ride?</span>
       <i class="bi bi-chevron-down arrow"></i>
     </button>
     <div class="faq-answer">
       <p>
-        We work hard to ensure every trip is a safe, reliable experience for riders and drivers. 
-        We continuously develop new safety features to make rides even safer.
+        Once you select your ride and review the trip details, you'll receive a prompt to confirm your booking. 
+        You can then choose to pay directly to your driver or use our secure online payment system integrated into our platform.
       </p>
     </div>
   </div>
@@ -973,13 +1172,26 @@ text-decoration: none;
 
   <div class="faq-item">
     <button class="faq-question">
-      <span>Do I need my own car?</span>
+      <span>4. Can I download my booking receipt?</span>
       <i class="bi bi-chevron-down arrow"></i>
     </button>
     <div class="faq-answer">
       <p>
-        You can drive your own car, rent one, or partner with a fleet owner depending on your location 
-        and the vehicle options available.
+        Yes. After your ride is completed and your payment is confirmed, you can download a digital copy of your 
+        booking receipt from your account dashboard for your records.
+      </p>
+    </div>
+  </div>
+  
+    <div class="faq-item">
+    <button class="faq-question">
+      <span>5. How can I view my ride status and booking history?</span>
+      <i class="bi bi-chevron-down arrow"></i>
+    </button>
+    <div class="faq-answer">
+      <p>
+       Your account dashboard provides real-time updates on your current ride status as well as a comprehensive history of all your past bookings, 
+       making it easy to track your trips and manage your travel records.
       </p>
     </div>
   </div>
@@ -1061,6 +1273,44 @@ text-decoration: none;
         
     </div>
 </section>
+
+
+<section class="apps-section">
+  <div class="container">
+    <h2 class="section-title">Its easier in the apps</h2>
+    <div class="row mt-4 g-4">
+      
+<div class="d-flex justify-content-center">
+    <div class="custom-card">
+        <img src="img/QR.jpg" alt="QR Code 1">
+        <div class="card-content">
+            <h5>Download Mega City App</h5>
+            <p>Scan to download</p>
+        </div>
+        <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon -->
+    </div>
+
+    <div class="custom-card">
+        <img src="img/TW.jpg" alt="QR Code 2">
+        <div class="card-content">
+            <h5>About Us</h5>
+            <p>Commit Your Thoughts</p>
+        </div>
+        <a href = "registration/feedbackForm.jsp"><i class="fas fa-arrow-right arrow-icon"></i> </a><!-- Arrow icon -->
+    </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS (Optional) -->
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+  crossorigin="anonymous">
+</script>
 
     
   

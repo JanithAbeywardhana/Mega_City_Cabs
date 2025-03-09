@@ -16,7 +16,7 @@
       margin-top: 40px;
     }
     .assign-header {
-      background-color: #007bff;
+      background-color: black;
       color: #fff;
       padding: 20px;
       border-top-left-radius: 10px;
@@ -29,7 +29,7 @@
     }
     .assign-footer {
       padding: 20px;
-      background-color: #f1f1f1;
+     
       text-align: center;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -43,6 +43,41 @@
     .form-label {
       font-weight: bold;
     }
+    
+    
+    
+    
+.footer {
+    background-color: black;  
+    color: #333;              
+    padding: 15px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #ddd;
+    width: 100%; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: white; 
+   
+}
+
+.footer a:hover {
+    color: gray;
+}
   </style>
 <body>
   <div class="container assign-container">
@@ -71,7 +106,7 @@
      
       <div class="col-md-6">
         <div class="card shadow">
-          <img src="${pageContext.request.contextPath}/img/driver-placeholder.jpg" alt="Driver Image" class="driver-img mx-auto d-block">
+          <img src="../img/Driver.png" alt="Driver Image" class="driver-img mx-auto d-block">
           <div class="card-body">
             <form action="${pageContext.request.contextPath}/admin/assignDriver" method="post">
               <input type="hidden" name="bookingId" value="${booking.bookingId}">
@@ -85,13 +120,23 @@
               </div>
               
               <input type="hidden" name="newStatus" value="Driver Assigned">
-              <button type="submit" class="btn btn-primary w-100">Assign Driver</button>
+              <button type="submit" class="btn btn-dark w-100">Assign Driver</button>
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+  
+  
+       <footer class="footer">
+    <div class="footer-container">
+        <p>© Copyright 2025 <a href="#">MegaCityCabs.lk</a>. All Rights Reserved</p>
+        <p>Developed by <a href="#">Janith Abeywardhana</a></p>
+    </div>
+</footer>
+     
   
  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
