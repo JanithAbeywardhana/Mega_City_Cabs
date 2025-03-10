@@ -25,6 +25,10 @@ public class Driver {
 		
 	}
 	
+	public Driver() {
+	    // Default constructor
+	}
+	
 	
 
 	public String getProfilePic() {

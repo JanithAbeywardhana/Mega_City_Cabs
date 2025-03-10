@@ -19,6 +19,9 @@ public class Customer {
 		this.phone_number = phone_number;
 		this.nic = nic;
 	}
+	
+	
+
 
 	public int getCustomer_id() {
 		return customer_id;

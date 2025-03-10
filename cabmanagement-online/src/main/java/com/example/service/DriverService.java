@@ -49,7 +49,7 @@ public class DriverService {
 	    	throw new IllegalArgumentException("Password must be at least 8 characters long, contain at least one letter, and one symbol.");
 	    }
 	    
-	    Driver existingDriver = driverDAO.getDriverByEmail(driver.getEmail());
+	    Driver existingDriver = DriverDAO.getDriverByEmail(driver.getEmail());
 	    if(existingDriver !=null) {
 	    	throw new IllegalArgumentException("Email is already rregisterd to the System.");
 	    }
