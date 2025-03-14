@@ -40,6 +40,19 @@ public class BookingService {
 	    }
 	 
 	 
+	 public double calculateDriverEarnings(int driverId) {
+	        List<Booking> bookings = BookingDAO.getBookingsByDriverId(driverId);
+	        double totalFare = 0;
+	        for (Booking booking : bookings) {
+	            // Optionally, consider only bookings with a specific status (e.g., "Paid")
+	            if ("Paid".equalsIgnoreCase(booking.getBookingStatus())) {
+	                totalFare += booking.getFare();
+	            }
+	        }
+	        return totalFare * 0.10;  // Driver earns 10% of total fare
+	    }
+	 
+	 
 	 
 	 public List<Booking> getBookingsByCustomerId(int customerId) {
 		    return BookingDAO.getBookingsByCustomerId(customerId);

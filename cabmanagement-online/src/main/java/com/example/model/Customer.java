@@ -21,9 +21,7 @@ public class Customer {
 	}
 	
 	
-
-
-	public int getCustomer_id() {
+    public int getCustomer_id() {
 		return customer_id;
 	}
 
@@ -79,11 +77,6 @@ public class Customer {
 		this.nic = nic;
 	}
 
-	
-	
-	
-	
-	
 }	
 
 	

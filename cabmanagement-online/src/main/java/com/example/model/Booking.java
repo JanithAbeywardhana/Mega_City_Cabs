@@ -2,6 +2,7 @@ package com.example.model;
 
 import java.sql.Timestamp;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Booking {
 	
@@ -37,6 +38,11 @@ public class Booking {
 		this.luggageCount = luggageCount;
 		this.bookingStatus = bookingStatus;
 				
+		
+	}
+	
+	
+	public Booking() {
 		
 	}
 	
@@ -83,9 +89,9 @@ public class Booking {
 		this.customerName = customerName;
 	}
 
-	public Booking() {
-		// TODO Auto-generated constructor stub
-	}
+
+
+
 
 	public int getBookingId() {
 		return bookingId;

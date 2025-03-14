@@ -175,6 +175,24 @@
   	<description></description>
   	<servlet-class>FeedbackController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DriverEarningsController</servlet-name>
+  	<display-name>DriverEarningsController</display-name>
+  	<description></description>
+  	<servlet-class>DriverEarningsController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DownloadEarningsPDFController</servlet-name>
+  	<display-name>DownloadEarningsPDFController</display-name>
+  	<description></description>
+  	<servlet-class>DownloadEarningsPDFController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DriverLogoutController</servlet-name>
+  	<display-name>DriverLogoutController</display-name>
+  	<description></description>
+  	<servlet-class>DriverLogoutController</servlet-class>
+  </servlet>
 
   
   <servlet-mapping>
@@ -291,6 +309,18 @@
   <servlet-mapping>
   	<servlet-name>FeedbackController</servlet-name>
   	<url-pattern>/customer/submitFeedback</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DriverEarningsController</servlet-name>
+  	<url-pattern>/driver/earnings</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DownloadEarningsPDFController</servlet-name>
+  	<url-pattern>/driver/downloadEarningsPDF</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DriverLogoutController</servlet-name>
+  	<url-pattern>/driver/logout</url-pattern>
   </servlet-mapping>
   
  

@@ -311,8 +311,9 @@
       <li class="active"><a href="driverDashBoard.jsp"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a></li>
       <li><a href="<%= pageContext.getServletContext().getContextPath() %>/DriverReg/editProfile"><i class="fas fa-user-edit me-2"></i>Edit Profile</a></li>
       <li><a href="${pageContext.request.contextPath}/driver/assignedRides"><i class="fas fa-car-side me-2"></i>Assigned Rides</a></li>
-      <li><a href="${pageContext.request.contextPath}/driver/tripHistory.jsp"><i class="fas fa-history me-2"></i>Trip History</a></li>
-      <li><a href="driverLogin.jsp"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+      
+      <li><a href="${pageContext.request.contextPath}/driver/earnings" class="btn btn-primary">View Earnings</a></li>
+      <li><a href="<%= pageContext.getServletContext().getContextPath() %>/driver/logout" class="btn btn-secondary"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
     </ul>
   </nav>
 

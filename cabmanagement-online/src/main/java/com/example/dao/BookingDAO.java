@@ -33,7 +33,7 @@ public class BookingDAO {
             
             int rowsInserted = stmt.executeUpdate();
             if (rowsInserted > 0) {
-                // Retrieve the generated key
+                
                 ResultSet rs = stmt.getGeneratedKeys();
                 if (rs.next()) {
                     int bookingId = rs.getInt(1);
