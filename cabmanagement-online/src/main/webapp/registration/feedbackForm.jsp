@@ -6,483 +6,666 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-       <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-  >
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-      body {
-          background-color: #f8f9fa;
-          font-family: Arial, sans-serif;
-      }
-      
-      
-      
-              .about-section {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background: url('../img/Childrens.jpg') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            color: white;
-            padding-left: 50px;
-        }
-        .about-text {
-            font-size: 60px;
-            font-weight: bold;
-            padding-left: 60px;
-        }
-      
-      
-    
-.ceo-section {
-    background-color: #f8f9fa; 
-    padding: 80px 0;
-}
-
-
-.text-container {
-    padding-left: 100px;
-}
-
-
-.ceo-text {
-    color: #000;
-}
-
-
-.btn-dark {
-    font-weight: bold;
-    padding: 12px 24px;
-    border-radius: 8px;
-}
-
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-     .custom-input {
-    background-color: #f8f9fa; 
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-}
-
-.custom-input:focus {
-    border-color: #000; 
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-
-.custom-btn {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 12px 200px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: background 0.3s ease-in-out;
-}
-
-.custom-btn:hover {
-    background-color: #222; 
-}
-      
-    
-        
-        
-            .faq-container {
-      max-width: 1300px;
-      margin: 50px 20px 50px 50px;
-      padding: 0 20px;
-      text-align: left;
+  <style>
+    :root {
+      --primary-color: #3a7bd5;
+      --secondary-color: #00d2ff;
+      --accent-color: #20bf6b;
+      --dark-color: #333333;
+      --light-color: #f8f9fa;
     }
-
-    .faq-container h2 {
-      font-size: 1.8rem;
-      font-weight: 600;
+    
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--dark-color);
+    }
+    
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      height: 500px;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/Childrens.jpg') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 50px;
+      overflow: hidden;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+    
+    .hero-title {
+      font-size: 60px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease;
+    }
+    
+    .hero-subtitle {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      opacity: 0.9;
+      animation: fadeInUp 1s ease 0.2s both;
+    }
+    
+    .hero-gradient {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    }
+    
+    .floating-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      margin-top: -80px;
+      position: relative;
+      z-index: 5;
+      animation: fadeIn 1s ease 0.4s both;
+    }
+    
+    /* Mission Section */
+    .mission-section {
+      padding: 80px 0;
+    }
+    
+    .mission-header {
       margin-bottom: 30px;
     }
-
     
-    .faq-item {
-      border-bottom: 1px solid #e0e0e0;
-      padding: 15px 0;
-      cursor: pointer; 
-      transition: background 0.3s ease;
-    }
-    .faq-item:hover {
-      background: #fafafa;
+    .mission-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--dark-color);
     }
     
-   
-.faq-question:hover,
-.faq-question:focus {
-  background-color: transparent !important;
-  outline: none;
-}
-
-
-.faq-question span {
-  color: inherit; 
-  
-}
-
- .faq-question {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0;
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  padding: 5px 0;
-  color: black;
-  
-}
-
-.arrow {
-  font-size: 1.2rem;
- 
-  margin-left: auto; 
-  transition: transform 0.3s;
-}
-
+    .mission-text {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 30px;
+    }
     
-    .faq-item.active .arrow {
+    .mission-card {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 15px;
+      padding: 30px;
+      color: white;
+      box-shadow: 0 10px 20px rgba(58, 123, 213, 0.2);
+      height: 100%;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .mission-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(58, 123, 213, 0.3);
+    }
+    
+    .mission-card-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .mission-card-title i {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+    
+    .mission-card-text {
+      font-size: 16px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+    
+    .mission-card::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+    
+    .mission-statement {
+      background: #f9fbff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 30px;
+      border: 1px solid #eef2f7;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .mission-statement::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+    }
+    
+    .mission-statement-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 0;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      color: var(--dark-color);
+    }
+    
+    .mission-statement-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+    }
+    
+    .mission-statement-icon {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .mission-statement.active .mission-statement-icon {
       transform: rotate(180deg);
     }
-
     
-    .faq-answer {
+    .mission-statement-content {
+      max-height: 0;
       overflow: hidden;
-      max-height: 0; 
-      transition: max-height 0.3s ease; 
-      font-size: 0.95rem;
-      line-height: 1.6;
+      transition: max-height 0.3s ease;
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 1.7;
       color: #555;
     }
-
     
-    .faq-answer p {
-      margin-top: 10px;
+    .mission-statement.active .mission-statement-content {
+      max-height: 500px;
+      margin-top: 20px;
     }
-       
-        
-        
-        
     
-.reimagine-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8f9fa; 
-    padding: 50px;
-}
-
-
-.text-content {
-    flex: 1;
-    font-family: Arial, sans-serif;
-}
-
-.text-content h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #111;
-    margin-bottom: 15px;
-}
-
-
-.custom-btn {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-.custom-btn:hover {
-    background-color: #222; 
-}
-
-
-.image-content img {
-    width: 120px; 
-    height: auto;
-}
-
-
-
-/* Section Title */
-.section-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: -40px;
-  color: #000;
-    padding: 50px 0;
-}
-
-.custom-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensures even spacing */
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 350px; /* Adjust width as needed */
-}
-
-.custom-card + .custom-card {
-    margin-left: 40px; /* Adjust this value to control the gap */
-}
-
-.custom-card img {
-    width: 80px; /* Adjust QR code size */
-    height: auto;
-    margin-right: 15px;
-}
-
-.card-content {
-    flex-grow: 1; /* Allows text to take space */
-}
-
-.arrow-icon {
-    font-size: 20px;
-    color: black;
-}
-
-/* QR Code Image */
-.qr-img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-}
-
-/* Title in Card */
-.app-title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-  color: #000;
-}
-
-/* Subtitle in Card */
-.app-subtitle {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 0;
-}
-
-/* Arrow Icon */
-.arrow-icon {
-  font-size: 1.2rem;
-  margin-left: 15px; /* Space between text and arrow */
-  color: #000;
-}
-
-        
-        
-        .footer {
-    background-color: black; 
-    color: #333;            
-    padding: 15px 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    font-size: 14px;
-    border-top: 2px solid #ddd;
-    width: 100%; 
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 15px;
-    flex-wrap: wrap;
-}
-
-
-.footer a {
-    text-decoration: none;
-    color: white; 
-   
-}
-
-.footer a:hover {
-    color: gray; 
-}
-    </style>
+    /* CEO Section */
+    .ceo-section {
+      padding: 100px 0;
+      background: linear-gradient(to right, #f8f9fa 50%, #e9ecef 50%);
+      overflow: hidden;
+    }
+    
+    .ceo-container {
+      position: relative;
+    }
+    
+    .ceo-image-container {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .ceo-image {
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .ceo-image:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .ceo-content {
+      padding: 0 50px;
+    }
+    
+    .ceo-title {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    
+    .ceo-highlight {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .ceo-text {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    
+    .ceo-btn {
+      background: var(--dark-color);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .ceo-btn:hover {
+      background: #222;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Feedback Section */
+    .feedback-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, rgba(58, 123, 213, 0.05), rgba(0, 210, 255, 0.05));
+    }
+    
+    .feedback-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+    
+    .feedback-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+      color: var(--dark-color);
+    }
+    
+    .feedback-input {
+      background-color: #f8f9fa;
+      border: 1px solid #eef2f7;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+    }
+    
+    .feedback-input:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 10px rgba(58, 123, 213, 0.1);
+    }
+    
+    .feedback-textarea {
+      min-height: 150px;
+    }
+    
+    .feedback-btn {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      width: 100%;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(58, 123, 213, 0.2);
+    }
+    
+    .feedback-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(58, 123, 213, 0.3);
+    }
+    
+    /* App Section */
+    .app-section {
+      padding: 80px 0;
+    }
+    
+    .app-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center;
+      color: var(--dark-color);
+    }
+    
+    .app-card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      margin: 0 15px;
+    }
+    
+    .app-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .app-qr {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-right: 20px;
+    }
+    
+    .app-card-content {
+      flex-grow: 1;
+    }
+    
+    .app-card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: var(--dark-color);
+    }
+    
+    .app-card-subtitle {
+      font-size: 14px;
+      color: #777;
+    }
+    
+    .app-arrow {
+      font-size: 20px;
+      color: var(--dark-color);
+      transition: transform 0.3s ease;
+    }
+    
+    .app-card:hover .app-arrow {
+      transform: translateX(5px);
+    }
+    
+    /* Footer */
+    .footer {
+      background: var(--dark-color);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: var(--secondary-color);
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero-title {
+        font-size: 48px;
+      }
+      
+      .ceo-content {
+        padding: 30px 0 0 0;
+      }
+      
+      .app-card {
+        margin-bottom: 20px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 36px;
+      }
+      
+      .hero-section {
+        height: 400px;
+        padding: 0 30px;
+      }
+      
+      .floating-card {
+        margin-top: -40px;
+        padding: 20px;
+      }
+      
+      .ceo-title {
+        font-size: 32px;
+      }
+      
+      .mission-title, .feedback-title, .app-title {
+        font-size: 28px;
+      }
+      
+      .mission-card {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-
-
- <section class="about-section">
-        <div class="about-text">About us</div>
-    </section>
-    
-    
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">About Us</h1>
+      <p class="hero-subtitle">Get to know the team driving your journey forward</p>
+    </div>
+    <div class="hero-gradient"></div>
+  </section>
   
-    
-    
-    
-     <div class="faq-container">
-  <h2>We reimagine the way the world moves for the better</h2>
-  <p>Movement is what we power. It's our lifeblood. It runs through our veins. It’s what gets us out of bed each morning. It pushes us to constantly reimagine how we can move better. For you. For all the places you want to go. For all the things you want to get. For all the ways you want to earn. Across the entire world. In real time. At the incredible speed of now.</p>
-
-
-  <div class="faq-item">
-    <button class="faq-question">
-      <span>Read our full mission statement</span>
-      <i class="bi bi-chevron-down arrow"></i>
-    </button>
-    <div class="faq-answer">
-      <p>
-      At Mega City Cabs Service, our mission is to provide safe, reliable, and efficient transportation solutions across Colombo. We are committed to delivering exceptional customer experiences through professional drivers, well-maintained vehicles, and cutting-edge technology. 
-      Our goal is to ensure convenient, affordable, and timely rides for every passenger while upholding the highest standards of safety and service excellence. Whether for daily commutes or special journeys, Mega City Cabs is your trusted travel partner.
-      </p>
+  <div class="container">
+    <div class="floating-card">
+      <h2 class="mission-title">We reimagine the way the world moves for the better</h2>
+      <p class="mission-text">Movement is what we power. It's our lifeblood. It runs through our veins. It's what gets us out of bed each morning. It pushes us to constantly reimagine how we can move better. For you. For all the places you want to go. For all the things you want to get. For all the ways you want to earn. Across the entire world. In real time. At the incredible speed of now.</p>
       
+      <div class="mission-statement">
+        <button class="mission-statement-header">
+          <h3 class="mission-statement-title">Read our full mission statement</h3>
+          <i class="fas fa-chevron-down mission-statement-icon"></i>
+        </button>
+        <div class="mission-statement-content">
+          <p>At Mega City Cabs Service, our mission is to provide safe, reliable, and efficient transportation solutions across Colombo. We are committed to delivering exceptional customer experiences through professional drivers, well-maintained vehicles, and cutting-edge technology.</p>
+          <p>Our goal is to ensure convenient, affordable, and timely rides for every passenger while upholding the highest standards of safety and service excellence. Whether for daily commutes or special journeys, Mega City Cabs is your trusted travel partner.</p>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
   
+  <!-- Mission Section -->
+  <section class="mission-section">
+    <div class="container">
+      <div class="mission-header">
+        <h2 class="mission-title">Our Values</h2>
+        <p class="mission-text">Our values define who we are and how we operate. They guide our decisions, shape our culture, and drive our commitment to excellence.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="mission-card">
+            <h3 class="mission-card-title">
+              <i class="fas fa-shield-alt"></i> Safety First
+            </h3>
+            <p class="mission-card-text">We prioritize the safety of our passengers, drivers, and the community above all else. Our commitment to safety is unwavering and integral to every aspect of our service.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="mission-card">
+            <h3 class="mission-card-title">
+              <i class="fas fa-heart"></i> Customer Obsession
+            </h3>
+            <p class="mission-card-text">We are dedicated to exceeding customer expectations at every touchpoint. We listen, learn, and constantly innovate to provide exceptional experiences.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="mission-card">
+            <h3 class="mission-card-title">
+              <i class="fas fa-globe"></i> Sustainability
+            </h3>
+            <p class="mission-card-text">We are committed to reducing our environmental impact and contributing to a more sustainable future through responsible practices and innovation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CEO Section -->
+  <section class="ceo-section">
+    <div class="container ceo-container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 ceo-image-container">
+          <img src="../img/image2.jpeg" alt="CEO Image" class="img-fluid ceo-image">
+        </div>
+        
+        <div class="col-lg-6 ceo-content">
+          <h2 class="ceo-title">A letter from our <br><span class="ceo-highlight">CEO</span></h2>
+          <p class="ceo-text">Read about our team's commitment to provide everyone on our global platform with the technology that can help them move ahead. Discover our vision for the future of transportation and how we're working to make it a reality.</p>
+          <button class="ceo-btn">Read JR's letter</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Feedback Section -->
+  <section class="feedback-section">
+    <div class="container">
+      <div class="feedback-container">
+        <h2 class="feedback-title">Submit Your Feedback</h2>
+        
+        <form action="${pageContext.request.contextPath}/customer/submitFeedback" method="post">
+          <div class="mb-4">
+            <label for="email" class="form-label fw-bold">Email:</label>
+            <input type="email" name="email" id="email" class="form-control feedback-input" required>
+          </div>
+          
+          <div class="mb-4">
+            <label for="subject" class="form-label fw-bold">Subject:</label>
+            <input type="text" name="subject" id="subject" class="form-control feedback-input" required>
+          </div>
+          
+          <div class="mb-4">
+            <label for="message" class="form-label fw-bold">Message:</label>
+            <textarea name="message" id="message" class="form-control feedback-input feedback-textarea" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="feedback-btn">
+            <i class="fas fa-paper-plane me-2"></i> SUBMIT FEEDBACK
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <!-- App Section -->
+  <section class="app-section">
+    <div class="container">
+      <h2 class="app-title">Connect With Us</h2>
+      
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="app-card">
+          <img src="../img/QR.jpg" alt="QR Code 1" class="app-qr">
+          <div class="app-card-content">
+            <h5 class="app-card-title">Download Mega City App</h5>
+            <p class="app-card-subtitle">Scan to download</p>
+          </div>
+          <i class="fas fa-arrow-right app-arrow"></i>
+        </div>
+        
+        <div class="app-card">
+          <img src="../img/TW.jpg" alt="QR Code 2" class="app-qr">
+          <div class="app-card-content">
+            <h5 class="app-card-title">About Us</h5>
+            <p class="app-card-subtitle">Commit Your Thoughts</p>
+          </div>
+          <a href="feedbackForm.jsp" class="text-decoration-none text-dark">
+            <i class="fas fa-arrow-right app-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      
+      <div class="footer-copyright">
+        &copy; 2025 Mega City Cabs Service. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
   <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-      const questionBtn = item.querySelector('.faq-question');
-      const answerPanel = item.querySelector('.faq-answer');
+    document.addEventListener('DOMContentLoaded', () => {
+      const missionStatement = document.querySelector('.mission-statement');
+      const missionHeader = document.querySelector('.mission-statement-header');
+      const missionContent = document.querySelector('.mission-statement-content');
       
-      questionBtn.addEventListener('click', () => {
-        // If not active, open it
-        if (!item.classList.contains('active')) {
-          item.classList.add('active');
-          // measure the scrollHeight and set it
-          answerPanel.style.maxHeight = answerPanel.scrollHeight + 'px';
+      missionHeader.addEventListener('click', () => {
+        missionStatement.classList.toggle('active');
+        if (missionStatement.classList.contains('active')) {
+          missionContent.style.maxHeight = missionContent.scrollHeight + 'px';
         } else {
-          // Otherwise, close it
-          item.classList.remove('active');
-          answerPanel.style.maxHeight = 0;
+          missionContent.style.maxHeight = 0;
         }
       });
     });
-  });
-</script>
-
-
-
-    <section class="ceo-section">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                
-              
-                <div class="col-md-6 text-container">
-                    <h1 class="fw-bold">A letter from our <br> <span class="ceo-text">CEO</span></h1>
-                    <p>Read about our team’s commitment to provide everyone on our global platform with the technology that can help them move ahead.</p>
-                    <button class="btn btn-dark">Read JR's letter</button>
-                </div>
-
-          
-                <div class="col-md-6 image-container">
-                    <img src="../img/image2.jpeg" alt="CEO Image" class="img-fluid">
-                </div>
-
-            </div>
-        </div>
-    </section>
-    
-    
-
-    
-   <div class="container feedback-container">
-    <h2>Submit Your Feedback</h2>
-    <c:if test="${not empty param.error}">
-        <div class="alert alert-danger">${param.error}</div>
-    </c:if>
-    <form action="${pageContext.request.contextPath}/customer/submitFeedback" method="post">
-        <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" name="email" id="email" class="form-control custom-input" required>
-        </div>
-        <div class="mb-3">
-            <label for="subject" class="form-label">Subject:</label>
-            <input type="text" name="subject" id="subject" class="form-control custom-input" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message:</label>
-            <textarea name="message" id="message" class="form-control custom-input" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="custom-btn">SUBMIT</button>
-    </form>
-</div>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    
-    <section class="apps-section">
-  <div class="container">
-    
-    <div class="row mt-4 g-4">
-      
-<div class="d-flex justify-content-center">
-    <div class="custom-card">
-        <img src="../img/QR.jpg" alt="QR Code 1">
-        <div class="card-content">
-            <h5>Download Mega City App</h5>
-            <p>Scan to download</p>
-        </div>
-        <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon -->
-    </div>
-
-    <div class="custom-card">
-        <img src="../img/TW.jpg" alt="QR Code 2">
-        <div class="card-content">
-            <h5>About Us</h5>
-            <p>Commit Your Thoughts</p>
-        </div>
-        <a href = "feedbackForm.jsp"><i class="fas fa-arrow-right arrow-icon"></i> </a><!-- Arrow icon -->
-    </div>
-</div>
-
-
-    </div>
-  </div>
-</section>
-
-<!-- Bootstrap JS (Optional) -->
-<script 
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-  crossorigin="anonymous">
-</script>
+  </script>
     
     
     
