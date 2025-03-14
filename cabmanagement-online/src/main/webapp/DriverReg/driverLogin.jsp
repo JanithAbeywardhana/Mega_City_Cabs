@@ -189,7 +189,7 @@
       transform: translateY(-2px);
     }
     
-    /* Animation */
+    
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -199,7 +199,7 @@
       animation: fadeIn 0.8s ease forwards;
     }
     
-    /* Responsive styles */
+   
     @media (min-width: 768px) {
       .login-image {
         display: block;
@@ -265,13 +265,13 @@
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
-    // Toggle password visibility
+    
     document.getElementById('togglePassword').addEventListener('click', function() {
       const passwordInput = document.getElementById('password');
       const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
       passwordInput.setAttribute('type', type);
       
-      // Toggle eye icon
+      
       this.classList.toggle('fa-eye');
       this.classList.toggle('fa-eye-slash');
     });

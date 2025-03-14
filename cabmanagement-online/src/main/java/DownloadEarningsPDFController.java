@@ -41,7 +41,7 @@ public class DownloadEarningsPDFController extends HttpServlet {
         Driver driver = (Driver) session.getAttribute("driver");
         double earnings = bookingService.calculateDriverEarnings(driver.getDriver_id());
 
-        // Set response content type to PDF
+        
         response.setContentType("application/pdf");
         response.setHeader("Content-Disposition", "attachment; filename=\"driverEarnings.pdf\"");
 

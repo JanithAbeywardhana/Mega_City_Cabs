@@ -140,7 +140,7 @@ h2:after {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .container {
     padding: 1rem;

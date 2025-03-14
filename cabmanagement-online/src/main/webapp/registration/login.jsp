@@ -283,7 +283,7 @@
       text-decoration: underline;
     }
     
-    /* Animations */
+    
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -299,7 +299,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
     
-    /* Floating animation for logo */
+    
     @keyframes float {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-10px); }
@@ -310,7 +310,7 @@
       animation: float 6s ease-in-out infinite;
     }
     
-    /* Responsive styles */
+    
     @media (min-width: 768px) {
       .login-image {
         display: block;

@@ -292,7 +292,7 @@
       color: var(--accent-color);
     }
     
-    /* Animations */
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -308,7 +308,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
     
-    /* Responsive styles */
+ 
     @media (max-width: 768px) {
       .checkout-content {
         padding: 20px;

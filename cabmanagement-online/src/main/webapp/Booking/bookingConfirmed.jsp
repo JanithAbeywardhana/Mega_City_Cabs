@@ -210,7 +210,7 @@
       color: var(--accent-color);
     }
     
-    /* Animations */
+  
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -231,7 +231,7 @@
       to { opacity: 1; transform: scale(1); }
     }
     
-    /* Responsive styles */
+   
     @media (max-width: 768px) {
       .confirmation-container {
         margin: 20px;

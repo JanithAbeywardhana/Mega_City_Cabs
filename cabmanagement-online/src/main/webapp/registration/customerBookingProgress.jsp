@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Enhanced Ride Progress Page Styling */
+   
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -62,13 +62,13 @@ body {
   border-radius: 2px;
 }
 
-/* Fix for overlapping step labels */
+
 .progress-steps {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px; /* Increased from 30px to accommodate labels */
+  margin-bottom: 60px; 
   position: relative;
-  padding: 0 20px; /* Add padding on sides to prevent labels from going off-screen */
+  padding: 0 20px; 
 }
 
 .progress-steps:before {
@@ -77,10 +77,10 @@ body {
   top: 50%;
   transform: translateY(-50%);
   height: 4px;
-  width: calc(100% - 100px); /* Subtract to account for the first and last step */
+  width: calc(100% - 100px); 
   background: #e9ecef;
   z-index: 0;
-  left: 50px; /* Start after the first step */
+  left: 50px; 
 }
 
 .step {
@@ -102,41 +102,41 @@ body {
 .step-label {
   position: absolute;
   top: 60px;
-  font-size: 0.75rem; /* Reduced font size */
+  font-size: 0.75rem; 
   font-weight: 500;
-  transform: translateX(-50%); /* Center the label under the step */
-  left: 50%; /* Center under the step */
+  transform: translateX(-50%); 
+  left: 50%; 
   text-align: center;
-  width: 80px; /* Fixed width for all labels */
+  width: 80px; 
   color: #6c757d;
 }
 
-/* Media query to handle smaller screens */
+
 @media (max-width: 768px) {
   .progress-steps {
-    margin-bottom: 80px; /* Even more space for mobile */
+    margin-bottom: 80px; 
   }
   
   .step {
-    width: 35px; /* Smaller steps */
+    width: 35px; 
     height: 35px;
     font-size: 0.8rem;
   }
   
   .step-label {
-    font-size: 0.65rem; /* Smaller font */
-    width: 70px; /* Narrower labels */
+    font-size: 0.65rem; 
+    width: 70px; 
   }
 }
 
-/* For very small screens, further optimize */
+
 @media (max-width: 480px) {
   .progress-steps {
-    margin-bottom: 100px; /* More space for vertical labels */
+    margin-bottom: 100px; 
   }
   
   .step-label {
-    transform: translateX(-50%) rotate(-45deg); /* Rotate labels */
+    transform: translateX(-50%) rotate(-45deg); 
     font-size: 0.6rem;
     top: 45px;
   }
@@ -170,7 +170,7 @@ body {
   font-weight: 600;
 }
 
-/* Modern Progress Bar */
+
 .progress {
   height: 16px;
   border-radius: 8px;
@@ -225,7 +225,7 @@ body {
   color: var(--dark-color);
 }
 
-/* Booking Details Card */
+
 .booking-details {
   margin-top: 40px;
   text-align: left;
@@ -276,7 +276,7 @@ body {
   font-weight: 500;
 }
 
-/* Action Buttons */
+
 .action-buttons {
   margin-top: 30px;
   display: flex;
@@ -358,7 +358,7 @@ body {
 <div class="progress-container">
   <h2>Ride Progress</h2>
   
-  <!-- Enhanced Step Progress Indicator -->
+  
   <div class="progress-steps">
     <c:choose>
       <c:when test="${booking.bookingStatus == 'Driver Assigned' || booking.bookingStatus == 'Accepted' || booking.bookingStatus == 'In Progress' || booking.bookingStatus == 'Completed' || booking.bookingStatus == 'Paid'}">
@@ -423,7 +423,7 @@ body {
     
   </div>
   
-  <!-- Classic Progress Bar (Enhanced) -->
+ 
   <c:choose>
     <c:when test="${booking.bookingStatus == 'Driver Assigned'}">
       <div class="progress">

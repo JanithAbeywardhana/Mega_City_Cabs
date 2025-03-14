@@ -24,7 +24,7 @@
       color: var(--dark-color);
     }
     
-    /* Hero Section */
+    
     .hero-section {
       position: relative;
       height: 500px;
@@ -78,7 +78,7 @@
       animation: fadeIn 1s ease 0.4s both;
     }
     
-    /* Mission Section */
+   
     .mission-section {
       padding: 80px 0;
     }
@@ -213,7 +213,7 @@
       margin-top: 20px;
     }
     
-    /* CEO Section */
+   
     .ceo-section {
       padding: 100px 0;
       background: linear-gradient(to right, #f8f9fa 50%, #e9ecef 50%);
@@ -283,7 +283,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
     
-    /* Feedback Section */
+    
     .feedback-section {
       padding: 80px 0;
       background: linear-gradient(135deg, rgba(58, 123, 213, 0.05), rgba(0, 210, 255, 0.05));
@@ -343,7 +343,7 @@
       box-shadow: 0 8px 20px rgba(58, 123, 213, 0.3);
     }
     
-    /* App Section */
+    
     .app-section {
       padding: 80px 0;
     }
@@ -405,7 +405,7 @@
       transform: translateX(5px);
     }
     
-    /* Footer */
+    
     .footer {
       background: var(--dark-color);
       color: white;
@@ -433,7 +433,7 @@
       color: var(--secondary-color);
     }
     
-    /* Animations */
+    
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -444,7 +444,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
     
-    /* Responsive */
+   
     @media (max-width: 992px) {
       .hero-title {
         font-size: 48px;
@@ -489,7 +489,7 @@
   </style>
 </head>
 <body>
-  <!-- Hero Section -->
+ 
   <section class="hero-section">
     <div class="hero-content">
       <h1 class="hero-title">About Us</h1>
@@ -516,7 +516,7 @@
     </div>
   </div>
   
-  <!-- Mission Section -->
+  
   <section class="mission-section">
     <div class="container">
       <div class="mission-header">
@@ -555,7 +555,7 @@
     </div>
   </section>
   
-  <!-- CEO Section -->
+ 
   <section class="ceo-section">
     <div class="container ceo-container">
       <div class="row align-items-center">
@@ -572,7 +572,7 @@
     </div>
   </section>
   
-  <!-- Feedback Section -->
+ 
   <section class="feedback-section">
     <div class="container">
       <div class="feedback-container">
@@ -602,7 +602,7 @@
     </div>
   </section>
   
-  <!-- App Section -->
+  
   <section class="app-section">
     <div class="container">
       <h2 class="app-title">Connect With Us</h2>
@@ -631,7 +631,7 @@
     </div>
   </section>
   
-  <!-- Footer -->
+  
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-links">

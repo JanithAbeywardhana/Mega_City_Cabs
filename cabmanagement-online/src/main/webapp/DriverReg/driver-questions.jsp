@@ -165,7 +165,7 @@
     .progress-bar {
       background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
       border-radius: 4px;
-      width: 83%; /* 5 out of 6 questions (assuming there's one more step) */
+      width: 83%; 
     }
     
     .progress-text {
@@ -176,7 +176,7 @@
       color: #777;
     }
     
-    /* Animation */
+   
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -186,7 +186,7 @@
       animation: fadeIn 0.8s ease forwards;
     }
     
-    /* Responsive styles */
+    
     @media (min-width: 992px) {
       .questionnaire-image {
         display: block;
